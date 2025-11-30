@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* horizontal strip that encompasses the nav area */
 header {
-    position: fixed;       /* use 'relative' if you don't want it to stick */
+    position: fixed;       
     top: 0;
     left: 0;
     width: 100%;
@@ -90,13 +90,13 @@ header {
     z-index: 1000;
 }
 
-/* reset navbar margins so they sit nicely in the strip */
+/* resets navbar margins so they sit nicely in the strip */
 #navbar1 {
     margin: 0;
 }
 
 
-/* prevent page content from being hidden under the fixed header */
+/* prevents page content from being hidden under the fixed header */
 body {
     padding-top: 64px; /* match header height */
 }
