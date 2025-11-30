@@ -8,6 +8,7 @@
     --primary-color: #5bc0be;
     --secondary-color: #6fffe9;
     --accent-color: #f4d35e;
+    --hover-color: #1e8a9d;
     --font-primary: 'Open Sans', sans-serif;  
 }
 *{
@@ -28,18 +29,25 @@ h1, h2, h3, h4, h5, h6{
         font-family: 'Playfair Display', serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav{
+#navbar1{
     margin: 1em auto 3em auto;
-    width: fit-content;
-    
-   
-    
+    margin-right: auto;
 }
-nav ul{
+
+#navbar1 ul{
     display: flex;
     align-items: center;
     list-style-type: none;
     gap: 2em;
     font-weight: bold;
+}
+
+#navbar1 a{
     text-decoration: none;
+    color: var(--text-color);
+}
+
+#navbar1 a:hover{
+    color: var(--hover-color);
+    transition: color 0.3s ease-in-out;
 }
