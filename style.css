@@ -18,4 +18,20 @@
 
 html{
     font-family: Open Sans, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: var(--text-color)
+}
+body{
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Playfair Display', serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+nav{
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
 }
