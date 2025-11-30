@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root{
+    --base-color: #f6f8fa;
+    --text-color: #0b132b;
+    --primary-color: #5bc0be;
+    --secondary-color: #6fffe9;
+    --accent-color: #f4d35e;
+    --font-primary: 'Open Sans', sans-serif;  
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Open Sans, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
