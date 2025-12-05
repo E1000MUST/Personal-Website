@@ -45,6 +45,14 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bold;
 }
 
+#navbar2{
+    position: relative; /* relative inside header so it flows when wrapped */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
 #navbar1 a{
     text-decoration: none;
     color: var(--text-color);
@@ -54,11 +62,7 @@ h1, h2, h3, h4, h5, h6{
     color: var(--hover-color);
     transition: color 0.3s ease-in-out;
 }
-#navbar2{
-    position: absolute;
-    top: 0.3em;
-    right: 1em;
-}
+
 #navbar2 ul{
     display: flex;
     align-items: center;
@@ -67,10 +71,13 @@ h1, h2, h3, h4, h5, h6{
 }
 .social-icon{
     vertical-align: middle;
+    vertical-align: middle;
+    max-height: 48px;
 }
 .social-icon:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
+    
 }
 
 /* horizontal strip that encompasses the nav area */
@@ -88,15 +95,55 @@ header {
     backdrop-filter: blur(4px);
     box-shadow: 0 2px 8px rgba(11,19,43,0.06);
     z-index: 1000;
+
+    flex-wrap: wrap;
+    gap: 0.25rem;
 }
 
 /* resets navbar margins so they sit nicely in the strip */
 #navbar1 {
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 
 /* prevents page content from being hidden under the fixed header */
 body {
     padding-top: 64px; /* match header height */
+}
+@media (max-width: 700px) {
+    header{
+        /* make header height flexible and let it expand vertically */
+        position: relative;   /* avoid fixed header issues on small screens */
+        height: auto;
+        padding: 0.5rem 1rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* make each navbar take full width and center its contents */
+    #navbar1, #navbar2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0.25rem 0;
+    }
+
+    #navbar1 ul, #navbar2 ul {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    /* reduce icon sizes on small screens */
+    .social-icon {
+        max-height: 36px;
+        width: auto;
+    }
+
+    /* remove body top padding used for fixed header on large screens */
+    body {
+        padding-top: 1rem;
+    }
 }
