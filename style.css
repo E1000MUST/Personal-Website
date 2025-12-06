@@ -9,8 +9,8 @@
     --secondary-color: #6fffe9;
     --accent-color: #f4d35e;
     --hover-color: #1e8a9d;
-    --color1: #7e8e9e;
-    --color2: #ceb69d;
+    --color1: #d7e2ee;
+    --color2: #f0eee8;
    
     --font-primary: 'Open Sans', sans-serif;  
 }
@@ -45,13 +45,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bold;
 }
 
-#navbar2{
-    position: relative; /* relative inside header so it flows when wrapped */
-    margin: 0;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
+
 
 #navbar1 a{
     text-decoration: none;
@@ -62,12 +56,31 @@ h1, h2, h3, h4, h5, h6{
     color: var(--hover-color);
     transition: color 0.3s ease-in-out;
 }
-
-#navbar2 ul{
+#navbar1 {
+    margin: 0;
     display: flex;
     align-items: center;
-    list-style-type: none;
-    gap: 2em;
+}
+
+
+#navbar2{
+    height: 100%;
+    position: relative; /* relative inside header so it flows when wrapped */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+#navbar2 ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
 }
 .social-icon{
     vertical-align: middle;
@@ -95,17 +108,20 @@ header {
     backdrop-filter: blur(4px);
     box-shadow: 0 2px 8px rgba(11,19,43,0.06);
     z-index: 1000;
-
-    flex-wrap: wrap;
-    gap: 0.25rem;
+    flex-wrap: nowrap;
+    
 }
+
+main{
+    background-color: var(--color2);
+}
+
+#projects{
+    list-style-type: none;
+}
+
 
 /* resets navbar margins so they sit nicely in the strip */
-#navbar1 {
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
 
 
 /* prevents page content from being hidden under the fixed header */
