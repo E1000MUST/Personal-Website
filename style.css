@@ -46,7 +46,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-
 #navbar1 a{
     text-decoration: none;
     color: var(--text-color);
@@ -120,11 +119,38 @@ main{
     list-style-type: none;
 }
 
+#projects
 
-/* resets navbar margins so they sit nicely in the strip */
+#contact{
+    margin-top: 2em;
+    margin-bottom: 2em;   
+}
+
+#contact ul{
+    height: 100%;
+    
+    align-items: center;
+    list-style: none;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+}
+
+#contact a{
+    text-decoration: underline;
+    color: var(--text-color);
+}
+#contact a:hover{
+    color: var(--hover-color);
+    transition: color 0.3s ease-in-out;
+}
+
+#contact h2{
+    margin-bottom: 1em;
+    margin-top: 2em; 
+}
 
 
-/* prevents page content from being hidden under the fixed header */
 body {
     padding-top: 64px; /* match header height */
 }
