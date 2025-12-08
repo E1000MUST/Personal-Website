@@ -6,7 +6,7 @@
     --base-color: #f6f8fa;
     --text-color: #0b132b;
     --primary-color: #5bc0be;
-    --secondary-color: #6fffe9;
+    --secondary-color: #fada70;
     --accent-color: #f4d35e;
     --hover-color: #1e8a9d;
     --color1: #d7e2ee;
@@ -100,8 +100,8 @@ header {
     align-items: center;
     justify-content: space-between; /* navbar1 left/center, navbar2 right */
     padding: 0 1rem;
-    background: linear-gradient(90deg, rgba(91,192,190,0.12), rgba(37,99,235,0.06)); /* soft strip; change to solid if desired */
-    backdrop-filter: blur(4px);
+    background: var(--secondary-color);
+    backdrop-filter: none;
     box-shadow: 0 2px 8px rgba(11,19,43,0.06);
     z-index: 1000;
     flex-wrap: nowrap;
@@ -113,8 +113,12 @@ main{
 }
 
 #projects{
+    
+       
+}
+#projects h2{
+    margin-bottom: 1em;
     margin-top: 2em;
-    margin-bottom: 2em;   
 }
 
 #projects ul{
@@ -137,7 +141,12 @@ main{
 }
 
 #contact ul{
-    
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
 }
 
 #contact a:hover{
@@ -159,14 +168,7 @@ body a{
     text-decoration: underline;
     color: var(--text-color);
 }
-body ul{
-    height: 100%;
-    align-items: center;
-    list-style: none;
-    gap: 1.25rem;
-    margin: 0;
-    padding: 0;
-}
+
 
 
 @media (max-width: 700px) {
