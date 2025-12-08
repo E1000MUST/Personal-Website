@@ -112,10 +112,23 @@ main{
     background-color: var(--color2);
 }
 
-#projects{
-    
-       
+#projects .project-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
 }
+#projects .project-text {
+  flex: 1;                /* text takes remaining space */
+  line-height: 1.4;
+}
+#LogicGateImage {
+  display: block;
+  width: 210px;           /* keep fixed or use max-width */
+  height: auto;
+  border-radius: 6px;
+}
+
 #projects h2{
     margin-bottom: 1em;
     margin-top: 2em;
