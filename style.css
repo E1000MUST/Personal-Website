@@ -9,8 +9,8 @@
     --secondary-color: #fada70;
     --accent-color: #f4d35e;
     --hover-color: #1e8a9d;
-    --color1: #d7e2ee;
-    --color2: #f0eee8;
+    --footer-color: #dca3ee;
+    --background-color: #f2efd5;
    
     --font-primary: 'Open Sans', sans-serif;  
 }
@@ -24,9 +24,14 @@ html{
     font-family: Open Sans, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: var(--text-color)
 }
+
 body{
     padding: 1em;
     background-color: var(--base-color);
+}
+
+body, html{
+    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6{
         font-family: 'Playfair Display', serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -109,7 +114,7 @@ header {
 }
 
 main{
-    background-color: var(--color2);
+    background-color: var(--background-color);
 }
 
 #projects .project-item {
@@ -175,11 +180,33 @@ main{
 
 body {
     padding-top: 64px;
+    background: var(--background-color)
 }
 
 body a{
     text-decoration: underline;
     color: var(--text-color);
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+footer {
+    font-size: 12px;
+    height: auto;
+    margin: 0 -9999rem;
+    padding: 0.25rem 9999rem;
+    margin-bottom: 0 -9999rem;
+    box-shadow: 0 50vh 0 50vh var(--footer-color);
+    background-color: var(--footer-color);
+}
+footer a:hover{
+    color: var(--hover-color);
+    transition: color 0.3s ease-in-out;
 }
 
 
