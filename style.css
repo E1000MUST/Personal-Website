@@ -22,7 +22,9 @@
 
 html{
     font-family: Open Sans, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    color: var(--text-color)
+    color: var(--text-color);
+    scroll-behavior: smooth;     
+    scroll-padding-top: 64px; 
 }
 
 body{
